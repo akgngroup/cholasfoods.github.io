@@ -6,9 +6,9 @@ var Frost = function(){
 	var screenWidth = $( window ).width();
 	
 	/* Website Launch Date */ 
-	var WebsiteCurrentDate = new Date();
+	var WebsiteCurrentDate = new Date( "Dec 01 2021 00:00:00" ) ;
 	monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	WebsiteCurrentDate.setMonth(WebsiteCurrentDate.getMonth() + 1);
+	WebsiteCurrentDate.setMonth(WebsiteCurrentDate.getMonth());
 	WebsiteLaunchDate =  WebsiteCurrentDate.getDate() + " " + monthNames[WebsiteCurrentDate.getMonth()] + " " + WebsiteCurrentDate.getFullYear(); 
 	/* Website Launch Date END */ 
 	
@@ -32,13 +32,13 @@ var Frost = function(){
 	var handleFinalCountDown = function(){
 		if(jQuery('.countdown-timer').length > 0 )
 		{
-			var startTime = new Date( "Jan 25 2020 17:02:37" ); // Put your website start time here
+			var startTime = new Date( "Nov 03 2020 17:02:37" ); // Put your website start time here
 			startTime = startTime.getTime();
 			
 			var currentTime = new Date();
 			currentTime = currentTime.getTime();
 			
-			var endTime = new Date( "Dec 31 2020 17:02:37" ); // Put your website end time here
+			var endTime = new Date( "Dec 01 2020 17:02:37" ); // Put your website end time here
 			endTime = endTime.getTime();
 			
 			$('.countdown-timer').final_countdown({
